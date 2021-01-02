@@ -5,6 +5,27 @@ body{
 
 }
 
+/* Colors */
+
+.bg-blue{
+    background-color: #5E3DEE;
+}
+.bg-white{
+    background-color: white;
+}
+.font-blue{
+    color:#5E3DEE
+}
+.font-white{
+    color:white
+}
+.bold{
+    font-weight: bold;
+}
+.clickable{
+    cursor: pointer;
+}
+
 #menu{
     max-width: 1400px;
     padding: 10px 0;
@@ -14,28 +35,21 @@ body{
     justify-content: flex-end;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-div{
-    /* border: 2px solid grey;
-    padding: 5px; */
-}
+
 .menu-item{
     color: #ffffffcc;
-    font-weight: bold;
     padding: 5px 15px;
     font-size: 0.9rem;
 }
 .menu-item:hover{
     color: white;
-    cursor: pointer;
 }
-.container{
-    background-color: #5E3DEE;
+.white-border{
+    border: 2px solid white;
 }
 .round-btn{
-    border: 2px solid white;
     border-radius: 20px;
     padding:5px 25px;
-    margin: 0 10px;
 }
 .round-btn:hover{
     background-color: white;
@@ -44,7 +58,6 @@ div{
 #logo{
     font-size: 1.5rem;
     color: white;
-    font-weight: bold;
     margin-right: auto;
 }
 
@@ -83,8 +96,7 @@ div{
     font-size: 1.1rem;
     padding:10px 35px;
     margin: 0 10px;
-    background-color: white;
-    color:#5E3DEE
+    
 }
 .signup-btn:hover{
     color: white;
@@ -130,7 +142,6 @@ div{
 
 .title-text{
     font-size: 1.4rem;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 .soft{
@@ -158,15 +169,12 @@ div{
     text-align: center;
 }
 .plan{
-    color: #5E3DEE;
-    font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
 .price{
     color: #444;
-    font-weight: bold;
     font-size: 3rem;
     margin-bottom: 5px;
 }
@@ -187,11 +195,7 @@ div{
 
 .action button{
     border: 2px solid #5E3DEE;
-    background-color: #5E3DEE;
-    color: white;
     font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
     padding: 10px 30px;
 }
 
@@ -199,7 +203,6 @@ div{
     background-color: white;
     color: #5E3DEE;
     font-size: 1rem;
-    font-weight: bold;
 }
 
 /* testimonial section */
@@ -222,7 +225,6 @@ div{
 .feedback p.name{
     color: #000;
     font-style: normal;
-    font-weight: bold;
 }
 
 /* subscribe section */

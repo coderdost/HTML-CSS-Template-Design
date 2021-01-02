@@ -186,8 +186,9 @@ body{
 }
 .features{
     line-height: 2rem;
-    padding-left: 10px;
+    padding-left: 0px;
     color: #666;
+    list-style: none;
 }
 .action{
     text-align: center;
@@ -288,10 +289,11 @@ body{
 }
 .footer-section ul{
     list-style: none;
-    padding-left: 20px;
+    padding: 0;
 }
 .rect ul{
     list-style:square;
+    padding-left: 20px;
 }
 .light-hr{
     background-color: white;
@@ -302,4 +304,34 @@ body{
     text-align: center;
     color: white;
     padding: 20px;
+}
+
+i{
+    margin-right: 5px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0;
+}
+.social div{
+    padding: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+}
+.social i{
+    font-size: 1.5rem;
+    margin: auto;
+}
+.social div:hover{
+    background-color: white;
+    color: #5E3DEE;
+}
+.social div:hover i{
+    color: #5E3DEE;
 }

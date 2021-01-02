@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 #menu{
@@ -57,6 +59,9 @@ div{
 }
 .title-graphic img{
     max-width: 600px;
+    position: relative;
+    bottom: -18px;
+    z-index: 1;
 }
 .title{
     display: flex;
@@ -85,4 +90,214 @@ div{
     color: white;
     background-color:#5E3DEE
 }
+.header-frame{
+    position: relative;
+    top: -12px;
+    height: 10rem;
+    width: 100%;
+}
 
+/* description css */
+.marketing, .cards{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.marketing h2, .price-title h2{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.marketing-card{
+    max-width: 30%;
+}
+
+.marketing-card img{
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.marketing-card div{
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.title-text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.soft{
+    color: #444444;
+}
+
+
+/* pricing css */
+#pricing, #testimonials, #subscribe{
+    max-width: 1000px;
+    margin: 100px auto;
+}
+.price-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price-card{
+    max-width: 30%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.price-info{
+    text-align: center;
+}
+.plan{
+    color: #5E3DEE;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price{
+    color: #444;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.trial{
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.features{
+    line-height: 2rem;
+    padding-left: 10px;
+    color: #666;
+}
+.action{
+    text-align: center;
+}
+
+.action button{
+    border: 2px solid #5E3DEE;
+    background-color: #5E3DEE;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.action button:hover{
+    background-color: white;
+    color: #5E3DEE;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* testimonial section */
+
+#testimonials{
+   display: flex;
+}
+.profile-image img{
+    border-radius: 50%;
+    max-width: 150px;
+}
+.feedback{
+    margin-left: 30px;
+}
+.feedback p{
+    color: #666;
+    font-style: italic;
+    line-height:1.5rem;
+}
+.feedback p.name{
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* subscribe section */
+
+#subscribe{
+    background-color: rgb(229, 237, 249);
+    border-radius: 10px;
+    padding: 120px 0;
+}
+
+.form{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.email{
+    width: 100%;
+    line-height: 2rem;
+    border-radius:5px;
+    border: 1px solid grey;
+    padding: 5px 20px;
+}
+.agree{
+    padding: 10px;
+    color: #666;
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 10px auto;
+}
+.subscribe{
+    width: 100%;
+    margin: 0;
+}
+.subs-title h2{
+    font-size: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* footer section */
+
+#footer{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  color: white;
+}
+
+.footer-section{
+   width: 400px;
+   line-height: 1.5rem;
+   padding: 20px;
+}
+
+.footer-section h3{
+    font-size: 1.5rem;
+}
+.footer-section ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.rect ul{
+    list-style:square;
+}
+.light-hr{
+    background-color: white;
+}
+.copyright{
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}

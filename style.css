@@ -52,6 +52,9 @@ body{
         background-color: white;
         color:#5E3DEE
     }
+    #menu-btn{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -82,6 +85,42 @@ body{
     }
     .round-btn{
     }
+    #menu-btn{
+        right: 20px;
+        position: absolute;
+        top: 20px;
+    }
+    .hide{
+        display: none !important;
+    }
+    .animated .menu-item{ 
+        animation-name: menuslidein;
+        animation-duration: 0.5s;
+    }
+    .hiding .menu-item{ 
+        animation-name: menuslideout;
+        animation-duration: 0.3s;
+    }
+    @keyframes menuslidein {
+        from{
+            transform: translateX(100%) scale(0);
+        }
+        to{
+            transform: translateX(0) scale(1);
+        }
+        
+    }
+    @keyframes menuslideout {
+        from{
+            transform: translateX(0) scale(1);
+        }
+        to{
+            transform: translateX(100%) scale(0);
+        }
+      
+        
+    }
+    
 }
 
 
@@ -498,3 +537,12 @@ i{
     100% {margin-left: -1110px}
   }
 
+.up{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.up i{
+    margin-top: 10px;
+}

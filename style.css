@@ -134,6 +134,9 @@ body{
     max-width: 70%;
     margin-bottom: 20px;
 }
+.marketing-card img:hover{
+  transform: scale(1.2);
+}
 
 .marketing-card div{
     text-align: center;
@@ -164,6 +167,11 @@ body{
     padding: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
+}
+.price-card:hover{
+    transform: rotate(4deg) scale(1.1);
+    background-color: lightgoldenrodyellow;
+
 }
 .price-info{
     text-align: center;
@@ -215,6 +223,11 @@ body{
     border-radius: 50%;
     max-width: 150px;
 }
+
+.profile-image img:hover{
+    transform: rotate(10deg) translate(15px);
+ }
+
 .feedback{
     margin-left: 30px;
 }
@@ -323,7 +336,9 @@ i{
     border-radius: 50%;
     text-align: center;
     margin: 10px;
+
 }
+
 .social i{
     font-size: 1.5rem;
     margin: auto;

@@ -26,35 +26,72 @@ body{
     cursor: pointer;
 }
 
-#menu{
-    max-width: 1400px;
-    padding: 10px 0;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@media only screen and (min-width: 1000px) {
+    #menu{
+        max-width: 1400px;
+        padding: 10px 0;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .menu-item{
+        color: #ffffffcc;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+    }
+    .menu-item:hover{
+        color: white;
+    }
+    .round-btn{
+        border-radius: 20px;
+        padding:5px 25px;
+    }
+    .round-btn:hover{
+        background-color: white;
+        color:#5E3DEE
+    }
 }
 
-.menu-item{
-    color: #ffffffcc;
-    padding: 5px 15px;
-    font-size: 0.9rem;
+@media only screen and (max-width: 1000px) {
+    #menu{
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .menu-item{
+        color: #ffffffcc;
+        font-size: 0.9rem;
+        padding: 20px;
+        border: 1px solid white;
+    }
+    .menu-item:hover{
+        color: #5E3DEE;
+        background-color: white;
+        font-size: 0.9rem;
+        padding: 20px;
+        border: 1px solid white;
+    }
+    #logo{
+        padding: 20px;
+    }
+    .round-btn{
+    }
 }
-.menu-item:hover{
-    color: white;
-}
+
+
+
+
+
 .white-border{
     border: 2px solid white;
 }
-.round-btn{
-    border-radius: 20px;
-    padding:5px 25px;
-}
-.round-btn:hover{
-    background-color: white;
-    color:#5E3DEE
-}
+
 #logo{
     font-size: 1.5rem;
     color: white;
@@ -62,6 +99,8 @@ body{
 }
 
 /* Home CSS */
+
+
 #home{
     display: flex;
     max-width: 1100px;
@@ -70,17 +109,43 @@ body{
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.title-graphic img{
-    max-width: 600px;
-    position: relative;
-    bottom: -18px;
-    z-index: 1;
+
+@media only screen and (min-width: 1000px) {
+    .title-graphic img{
+        max-width: 600px;
+        position: relative;
+        bottom: -18px;
+        z-index: 1;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+@media only screen and (max-width: 1000px) {
+    #home{
+        flex-direction: column-reverse;
+    }
+    .title-graphic {
+        text-align: center;
+    }
+    .title-graphic img{
+        max-width: 90%;
+        position: relative;
+        bottom: -18px;
+        z-index: 1;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
+
 .title h1{
     font-size: 3.5rem;
     margin: 0;
@@ -153,21 +218,43 @@ body{
 
 
 /* pricing css */
+
 #pricing, #testimonials, #subscribe{
     max-width: 1000px;
     margin: 100px auto;
 }
-.price-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media only screen and (min-width: 800px) {
+   
+    .price-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .price-card{
+        max-width: 30%;
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
 }
-.price-card{
-    max-width: 30%;
-    padding: 40px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+
+@media only screen and (max-width: 1000px) {
+    .price-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .price-card{
+        max-width: 400px;
+        width: 70%;
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
 }
+
 .price-card:hover{
     transform: rotate(4deg) scale(1.1);
     background-color: lightgoldenrodyellow;
